@@ -2,8 +2,8 @@
 	"TimelineEvents": [
 		{
 			"Time": 0.01,
-			"Header": "",
-			"Text": "",
+			"Header": "I left the planet on!",
+			"Text": "While you were visiting your friends, you forgot to turn the Earth off.",
 			"God": "World Wars, Corona? I must hurry…"
 		}
 		,
