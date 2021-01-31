@@ -101,3 +101,4 @@ MonoBehaviour:
   offsetY: 0
   planetOnMinimap: {fileID: 3987592859982465592, guid: 56d37eb44ac908c409706f726d54bf1d,
     type: 3}
+  planetName: EightBall
