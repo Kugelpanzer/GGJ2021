@@ -7,19 +7,20 @@ public class RandomBubble : MonoBehaviour
 {
 
     public Text content;
-
+    public float destroyText = 10f;
     public void SelfDestroy()
     {
         Destroy(gameObject);
     }
-
+    private void Start()
+    {
+        Invoke("SelfDestroy", destroyText);
+    }
     public void SetBubble( string content)
     {
-        this.content.text = content;
+        if (this.gameObject != null)
+            this.content.text = content;
 
     }
-    public void Start()
-    {
-        
-    }
+
 }

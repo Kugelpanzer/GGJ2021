@@ -10,7 +10,7 @@ public class SpawnText : MonoBehaviour
     public GameObject placment;
 
 
-    public float destroyText=15;
+
 
     public void SpawnUiText(TimelineEvent e)
     {
