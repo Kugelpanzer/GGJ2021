@@ -8,4 +8,6 @@ public class TimelineEvent
 	public string Header;
 	public string Text;
 	public string God;
+	[NonSerialized]
+	public bool Triggered = false;
 }

@@ -1,0 +1,11 @@
+{
+	"RandomEvents": [
+		{
+			"Text": "Some random event text"
+		}
+		,
+		{
+			"Text": "Some other random event text"
+		}
+	]
+}
