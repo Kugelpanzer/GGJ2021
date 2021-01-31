@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class TimeController : MonoBehaviour
 {
+	public static TimeController time;
+
 	public TextAsset TimelineEventsFile;
 	public TextAsset RandomEventsFile;
 
@@ -26,6 +28,7 @@ public class TimeController : MonoBehaviour
 
 	void Awake ()
     {
+		time = this;
 		_timelineEvents = JsonUtility.FromJson<TimelineEventCollection> ( TimelineEventsFile.text );
 		_randomEvents = JsonUtility.FromJson<RandomEventCollection> ( RandomEventsFile.text );
 	}
@@ -67,5 +70,10 @@ public class TimeController : MonoBehaviour
 	{
 		Debug.Log ( JsonUtility.ToJson ( randomEvent, true ) );
 		// do UI shit
+	}
+
+	public double CurrentGameTime ()
+	{
+		return 0;
 	}
 }
