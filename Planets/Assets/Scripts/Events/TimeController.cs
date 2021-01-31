@@ -52,8 +52,16 @@ public class TimeController : MonoBehaviour
 		time = this;
 		_timelineEvents = JsonUtility.FromJson<TimelineEventCollection> ( TimelineEventsFile.text );
 		_randomEvents = JsonUtility.FromJson<RandomEventCollection> ( RandomEventsFile.text );
+		OnGameStart();
 	}
 
+	public bool CheckEnd()
+    {
+		if (GameFraction > 1)
+			return true;
+		else
+			return false;
+    }
 	void Update()
     {
 		_gameTime = Time.time / 60 - _gameStartTime;
@@ -84,7 +92,7 @@ public class TimeController : MonoBehaviour
 	public void ExecuteTimelineEvent ( TimelineEvent timelineEvent )
 	{
 		Debug.Log ( JsonUtility.ToJson ( timelineEvent, true ) );
-		// do UI shit
+		SpawnText.t.SpawnUiText(timelineEvent);
 		timelineEvent.Triggered = true;
 		AfterEvent ();
 	}
@@ -92,7 +100,7 @@ public class TimeController : MonoBehaviour
 	public void ExecuteRandomEvent ( RandomEvent randomEvent )
 	{
 		Debug.Log ( JsonUtility.ToJson ( randomEvent, true ) );
-		// do UI shit
+		SpawnText.t.SpawnRandomText(randomEvent);
 		randomEvent.Triggered = true;
 		AfterEvent ();
 	}
