@@ -1,11 +1,183 @@
 {
 	"RandomEvents": [
 		{
-			"Text": "Some random event text"
+			"Text": "Please let me marry Gary, make Gary doesn’t want to marry Mary!"
+		}
+		,
+		{
+			"Text": "Oh Lord... want you give meeee, new Merceeeedees Benz!"
+		}
+		,
+		{
+			"Text": "I execute judgment on you Covid, I execute judgment on you Satan, you destroyer, you killer, you get out…!"
+		}
+		,
+		{
+			"Text": "I want a new doll."
+		}
+		,
+		{
+			"Text": "I want a new toy car."
+		}
+		,
+		{
+			"Text": "Please let the penis enlargement pills work!"
+		}
+		,
+		{
+			"Text": "Oh, Jesus, oh yes…"
+		}
+		,
+		{
+			"Text": "Why have you forsaken us?"
+		}
+		,
+		{
+			"Text": "Forgive us Father!"
+		}
+		,
+		{
+			"Text": "Please, God, guide us!"
+		}
+		,
+		{
+			"Text": "We are damned! Please if you are there and if you care, please let us find a way out… I just can’t listen to Sinan Sakić any more!"
+		}
+		,
+		{
+			"Text": "*mumble, mumble, mumble*"
+		}
+		,
+		{
+			"Text": "Help me God, to overcome this fear of clippers!"
+		}
+		,
+		{
+			"Text": "God, please give me a million dollars, I promise we’ll split them 50% 50%"
+		}
+		,
+		{
+			"Text": "God, me again. About those one million dollars… We can split 60% 40% your favor."
+		}
+		,
+		{
+			"Text": "Me again, please God. I’ll settle for 100.000$. Rest is yours. K, thx, bye!"
+		}
+		,
+		{
+			"Text": "Please God, don’t let mommy and daddy fight. I know they are professional MMA fighters, but I am afraid that they might get hurt."
+		}
+		,
+		{
+			"Text": "Shiva, is that you? No? God? Oh, sorry, wrong prayer…"
+		}
+		,
+		{
+			"Text": "God please make me look like Kim Kardashian."
+		}
+		,
+		{
+			"Text": "Please, please make people know we already made and published a game and we plan on making even better games in the future. Just please, make people know about M.U.S.T. Repeat."
+		}
+		,
+		{
+			"Text": "Is it sin if I steal? I’m asking for a friend…"
+		}
+		,
+		{
+			"Text": "Is it sin if I murder? I’m asking for a friend…"
+		}
+		,
+		{
+			"Text": "Is it sin if I watch porn? I’m asking for a friend…"
+		}
+		,
+		{
+			"Text": "Please God let the prices of GameStop actions drop. Your Hedge fonds."
+		}
+		,
+		{
+			"Text": "I want to find love of my life."
 		}
 		,
 		{
 			"Text": "Some other random event text"
 		}
+		,
+		{
+			"Text": "Make my company successful."
+		}
+		,
+		{
+			"Text": "Make people leave Britney alone. Make them leave her alone!"
+		}
+		,
+		{
+			"Text": "Make my butt problem go away."
+		}
+		,
+		{
+			"Text": "Give me strength! ...on the next dice roll!"
+		}
+		,
+		{
+			"Text": "Give me a robot!!! ….I mean, please."
+		}
+		,
+		{
+			"Text": "01101100 01101111 01110110 01100101"
+		}
+		,
+		{
+			"Text": "Please God, let me tap into the vast energy pool of knowledge, just for a second."
+		}
+		,
+		{
+			"Text": "Spare me."
+		}
+		,
+		{
+			"Text": "Don't abandon us."
+		}
+		,
+		{
+			"Text": "Are we forsaken?"
+		}
+		,
+		{
+			"Text": "I pray for my mommy, for my daddy and for my litle teddy! Annie"
+		}
+		,
+		{
+			"Text": "Cheese!"
+		}
+		,
+		{
+			"Text": "I want peace in the world *blink, blink*"
+		}
+		,
+		{
+			"Text": "Makke me dumbed not, dude!"
+		}
+		,
+		{
+			"Text": "Despair! Please, forgive us, return!"
+		},
+		{
+			"Text": "Makke me dumbed not, dudde!"
+		},
+		{
+			"Text": "Please God, make pistachios icecream disappear."
+		},
+		{
+			"Text": "Please God, make pistachios icecream run in rivers."
+		},
+		{
+			"Text": "Abandoned, are we?"
+		},
+		{
+			"Text": "My life for Aiur! I mean for you my Lord!"
+		}
+		
 	]
 }

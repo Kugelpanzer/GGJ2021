@@ -18,7 +18,7 @@
 			"Time": 0.40,
 			"Header": "Three Eyed Unicorn Attack",
 			"Text": "Oh God, Why have you cursed us. So fluffy, but so deadly!",
-			"God": "Oh, noes. Who let Emily out?"
+			"God": "Oh, noes. Who let Emmily out?"
 		}
 		,
 		{
@@ -65,7 +65,7 @@
 		,
 		{
 			"Time": 2.40,
-			"Header": "Mutant Sheeps vs Monsters from the Deep",
+			"Header": "Mutant Sheep vs Monster from the Deep",
 			"Text": "Weird sh*t is happening on Earth, hurry…",
 			"God": "Wut?!?"
 		}
