@@ -16,4 +16,9 @@ public class TimelineEventCollection : IEnumerable <TimelineEvent>
 
 	public IEnumerator<TimelineEvent> GetEnumerator () => ( (IEnumerable<TimelineEvent>) TimelineEvents ).GetEnumerator ();
 	IEnumerator IEnumerable.GetEnumerator () => ( (IEnumerable<TimelineEvent>) TimelineEvents ).GetEnumerator ();
+
+	public void OnGameStart()
+	{
+		foreach ( TimelineEvent timelineEvent in TimelineEvents ) timelineEvent.Triggered = false;
+	}
 }

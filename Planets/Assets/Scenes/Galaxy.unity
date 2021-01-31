@@ -147,10 +147,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1162225295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9d6a79230e64941954a678d42e4caa, type: 3}
+  m_Script: {fileID: 11500000, guid: 3978d5b102e0b0b4c864a25cc8c83614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TimelineEventsFile: {fileID: 4900000, guid: 43d1edf84092c914fbf15544a615d1a6, type: 3}
+  RandomEventsFile: {fileID: 4900000, guid: 2a580c9263be82a469b00c2e0ddbf6a6, type: 3}
+  MinRandomEventDelta: 0.15
+  MaxRandomEventDelta: 0.7
 --- !u!4 &1162225297
 Transform:
   m_ObjectHideFlags: 0
