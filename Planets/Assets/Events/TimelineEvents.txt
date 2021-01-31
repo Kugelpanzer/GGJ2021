@@ -9,8 +9,8 @@
 		,
 		{
 			"Time": 0.20,
-			"Header": "6g plague",
-			"Text": "6g network has caused a plague. Millions of humans die.",
+			"Header": "6G plague",
+			"Text": "6G network has caused a plague. Millions of humans die.",
 			"God": "Upsie :s"
 		}
 		,
