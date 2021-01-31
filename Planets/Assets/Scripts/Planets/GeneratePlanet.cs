@@ -23,6 +23,8 @@ public class GeneratePlanet : MonoBehaviour
         newLayout.transform.eulerAngles = Vector3.forward * Random.Range(0,180);
         newLight.transform.eulerAngles = Vector3.forward * Random.Range(0, 180);
 
+        
+
         return newCore;
     }
 

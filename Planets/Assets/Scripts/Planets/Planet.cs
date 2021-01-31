@@ -16,6 +16,8 @@ public class Planet : MonoBehaviour
     public float offsetY;
 
     public GameObject planetOnMinimap;
+
+    public string planetName;
     public virtual void SetPlanetPosition(int x, int y)
     {
         
