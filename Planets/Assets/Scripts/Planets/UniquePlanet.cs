@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UniquePlanet : MonoBehaviour
+public class UniquePlanet : Planet
 {
     // Start is called before the first frame update
     void Start()

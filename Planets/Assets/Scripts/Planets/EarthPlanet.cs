@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class EarthPlanet : Planet
+using UnityEngine.EventSystems;
+public class EarthPlanet : Planet,IPointerClickHandler
 {
     public static EarthPlanet earth;
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Debug.Log("Victory");
+
+    }
     // Start is called before the first frame update
     void Awake()
     {
