@@ -23,29 +23,16 @@
 		,
 		{
 			"Time": 1.00,
-			"Header": "Zombierona",
+			"Header": "Zombirona",
 			"Text": "New covid family virus has caused humans to yearn for living flash of other humans",
 			"God": "Not even funny :/"
 		}
 		,
-		{
-			"Time": 1.00,
-			"Header": "Covid-2077",
-			"Text": "Console users die.",
-			"God": "Not even funny :/"
-		}
-		,
-		{
-			"Time": 1.00,
-			"Header": "Futur Covid",
-			"Text": "New Covid virus. Spreads among blackjack players and hookers.",
-			"God": "Not even funny :/"
-		}
-		,
+		
 		{
 			"Time": 1.20,
 			"Header": "Alian Invasion",
-			"Text": "Yo momma aliens invade earth. Fat people spared! // Americans welcome them!",
+			"Text": "Yo momma aliens invade earth. Fat people spared!",
 			"God": "What? Where did they came from? Oh… OH!"
 		}
 		,
