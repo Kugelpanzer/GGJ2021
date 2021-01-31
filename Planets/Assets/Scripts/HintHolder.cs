@@ -41,6 +41,14 @@ public class HintHolder : MonoBehaviour
         ggj.transform.position = transform.position;
         ggj.transform.SetParent(this.gameObject.transform);
         ggj.transform.localScale = new Vector2(40, 40);
+        ggj.GetComponent<SpriteRenderer>().sortingOrder = 5;
+        foreach(Transform child in ggj.transform)
+        {
+            if (child.GetComponent<SpriteRenderer>() != null)
+            {
+                child.GetComponent<SpriteRenderer>().sortingOrder += 5;
+            }
+        }
     }
 
     // Update is called once per frame
