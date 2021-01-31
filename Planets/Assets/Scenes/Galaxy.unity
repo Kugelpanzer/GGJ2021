@@ -152,8 +152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimelineEventsFile: {fileID: 4900000, guid: 43d1edf84092c914fbf15544a615d1a6, type: 3}
   RandomEventsFile: {fileID: 4900000, guid: 2a580c9263be82a469b00c2e0ddbf6a6, type: 3}
-  MinRandomEventDelta: 0.15
-  MaxRandomEventDelta: 0.7
+  MinRandomEventDelta: 0.1
+  MaxRandomEventDelta: 0.5
+  BeforeTimelineEventRandomEventDelta: 0.1
+  GameDuration: 5
 --- !u!4 &1162225297
 Transform:
   m_ObjectHideFlags: 0

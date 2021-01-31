@@ -14,11 +14,15 @@ public class TimeController : MonoBehaviour
 	/// <summary>
 	/// Minimum time in minutes that an random event can happen after a last event
 	/// </summary>
-	public double MinRandomEventDelta = 0.15;
+	public double MinRandomEventDelta = 0.1;
 	/// <summary>
 	/// Maximum time in minutes that an random event can happen after a last event
 	/// </summary>
-	public double MaxRandomEventDelta = 0.7;
+	public double MaxRandomEventDelta = 0.5;
+	/// <summary>
+	/// Time in minutes before the next timeline event that no random events are allowed
+	/// </summary>
+	public double BeforeTimelineEventRandomEventDelta = 0.1;
 	/// <summary>
 	/// Game duration in minutes
 	/// </summary>
@@ -38,6 +42,10 @@ public class TimeController : MonoBehaviour
 	double _gameStartTime;
 	double _lastEventTime;
 	double _gameTime;
+	TimelineEvent _nextTimelineEvent;
+	double _nextTimelineEventTime;
+	RandomEvent _nextRandomEvent;
+	double _nextRandomEventTime;
 
 	void Awake ()
     {
@@ -49,17 +57,16 @@ public class TimeController : MonoBehaviour
 	void Update()
     {
 		_gameTime = Time.time / 60 - _gameStartTime;
-		TimelineEvent timelineEvent =
-			(
-				from e in _timelineEvents
-				where e.Time < _gameTime && !e.Triggered
-				orderby e.Time
-				select e
-			).FirstOrDefault();
-		if ( timelineEvent != null )
+
+		if (_nextTimelineEvent != null && _gameTime >= _nextTimelineEventTime)
 		{
-			ExecuteTimelineEvent ( timelineEvent );
+			ExecuteTimelineEvent ( _nextTimelineEvent );
 			return;
+		}
+
+		if (_nextRandomEvent != null && _gameTime >= _nextRandomEventTime)
+		{
+			ExecuteRandomEvent ( _nextRandomEvent );
 		}
     }
 
@@ -70,6 +77,8 @@ public class TimeController : MonoBehaviour
 		_lastEventTime = 0;
 		_timelineEvents.OnGameStart ();
 		_randomEvents.OnGameStart ();
+		PrepareNextTimelineEvent ();
+		PrepareNextRandomEvent ();
 	}
 
 	public void ExecuteTimelineEvent ( TimelineEvent timelineEvent )
@@ -77,12 +86,49 @@ public class TimeController : MonoBehaviour
 		Debug.Log ( JsonUtility.ToJson ( timelineEvent, true ) );
 		// do UI shit
 		timelineEvent.Triggered = true;
-		_lastEventTime = _gameTime;
+		AfterEvent ();
 	}
 
 	public void ExecuteRandomEvent ( RandomEvent randomEvent )
 	{
 		Debug.Log ( JsonUtility.ToJson ( randomEvent, true ) );
 		// do UI shit
+		randomEvent.Triggered = true;
+		AfterEvent ();
+	}
+
+	void AfterEvent()
+	{
+		_lastEventTime = _gameTime;
+		PrepareNextTimelineEvent ();
+		PrepareNextRandomEvent ();
+	}
+
+	void PrepareNextTimelineEvent()
+	{
+		_nextTimelineEvent =
+			(
+				from e in _timelineEvents
+				where !e.Triggered
+				orderby e.Time
+				select e
+			).FirstOrDefault ();
+		_nextTimelineEventTime = _nextTimelineEvent == null ? GameDuration : _nextTimelineEvent.Time;
+	}
+
+	void PrepareNextRandomEvent ()
+	{
+		_nextRandomEventTime = _lastEventTime + MinRandomEventDelta + ( MaxRandomEventDelta - MinRandomEventDelta ) * UnityEngine.Random.value;
+		if ( _nextRandomEventTime > _nextTimelineEventTime - BeforeTimelineEventRandomEventDelta )
+			_nextRandomEvent = null;
+		else
+		{
+			IEnumerable<RandomEvent> randomEventsLeft =
+				from e in _randomEvents
+				where !e.Triggered
+				select e;
+			int randomEventsLeftCount = randomEventsLeft.Count ();
+			_nextRandomEvent = randomEventsLeftCount == 0 ? null : randomEventsLeft.ElementAt ( UnityEngine.Random.Range ( 0, randomEventsLeftCount ) );
+		}
 	}
 }
