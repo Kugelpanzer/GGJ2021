@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Bubble : MonoBehaviour
+public class RandomBubble : MonoBehaviour
 {
-    public Text header;
+
     public Text content;
-    public Text god;
+
     public void SelfDestroy()
     {
         Destroy(gameObject);
     }
 
-    public void SetBubble(string header, string content, string god)
+    public void SetBubble( string content)
     {
-        this.header.text = header;
         this.content.text = content;
-        this.god.text ="God: "+ god;
-    }
 
+    }
+    public void Start()
+    {
+        
+    }
 }

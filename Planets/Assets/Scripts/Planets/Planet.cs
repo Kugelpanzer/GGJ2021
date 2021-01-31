@@ -33,7 +33,10 @@ public class Planet : MonoBehaviour
         GameObject m=Instantiate(planetOnMinimap);
         m.GetComponent<MinimapPlanet>().SetPlanetPosition(this);
     }
-
+    private void OnMouseDown()
+    {
+        PlanetName.planetName.SetName(planetName);
+    }
     // Start is called before the first frame update
     void Start()
     {
