@@ -166,6 +166,8 @@ GameObject:
   - component: {fileID: 3206838687824706711}
   - component: {fileID: 3206838687824706710}
   - component: {fileID: 4866762050204728069}
+  - component: {fileID: 6809474199753174027}
+  - component: {fileID: 7728883894206707834}
   m_Layer: 5
   m_Name: BubblePrefab
   m_TagString: Untagged
@@ -247,6 +249,44 @@ MonoBehaviour:
   header: {fileID: 3206838687888364579}
   content: {fileID: 3206838686923597240}
   god: {fileID: 3206838688393217578}
+--- !u!223 &6809474199753174027
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3206838687824706708}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &7728883894206707834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3206838687824706708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &3206838687888364577
 GameObject:
   m_ObjectHideFlags: 0
