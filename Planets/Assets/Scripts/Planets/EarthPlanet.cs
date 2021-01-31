@@ -9,7 +9,7 @@ public class EarthPlanet : Planet,IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("Victory");
-
+        LevelController.levelController.GoToScene(2);
     }
     // Start is called before the first frame update
     void Awake()
