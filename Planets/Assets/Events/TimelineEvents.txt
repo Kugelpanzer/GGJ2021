@@ -1,0 +1,80 @@
+{
+	"TimelineEvents": [
+		{
+			"Time": 0.01,
+			"Header": "",
+			"Text": "",
+			"God": "World Wars, Corona? I must hurry…"
+		}
+		,
+		{
+			"Time": 0.20,
+			"Header": "6g plague",
+			"Text": "6g network has caused a plague. Millions of humans die.",
+			"God": "Upsie :s"
+		}
+		,
+		{
+			"Time": 0.40,
+			"Header": "Three Eyed Unicorn Attack",
+			"Text": "Oh God, Why have you cursed us. So fluffy, but so deadly!",
+			"God": "Oh, noes. Who let Emily out?"
+		}
+		,
+		{
+			"Time": 1.00,
+			"Header": "Zombierona",
+			"Text": "New covid family virus has caused humans to yearn for living flash of other humans",
+			"God": "Not even funny :/"
+		}
+		,
+		{
+			"Time": 1.00,
+			"Header": "Covid-2077",
+			"Text": "Console users die.",
+			"God": "Not even funny :/"
+		}
+		,
+		{
+			"Time": 1.00,
+			"Header": "Futur Covid",
+			"Text": "New Covid virus. Spreads among blackjack players and hookers.",
+			"God": "Not even funny :/"
+		}
+		,
+		{
+			"Time": 1.20,
+			"Header": "Alian Invasion",
+			"Text": "Yo momma aliens invade earth. Fat people spared! // Americans welcome them!",
+			"God": "What? Where did they came from? Oh… OH!"
+		}
+		,
+		{
+			"Time": 1.40,
+			"Header": "Arctic melts",
+			"Text": "Arctic melts due to consumerism. Holland cries for help: “Please send li..gulp, gulp, gulp…”",
+			"God": "Ok. Ok…. We don’t need that? Do we?"
+		}
+		,
+		{
+			"Time": 2.20,
+			"Header": "World War 3",
+			"Text": "Humans wage war over the debate would the next great war be named World War 3 or Atomic War 1. Population of the Earth almost perish.",
+			"God": "You got to be kidding me?!"
+		}
+		,
+		{
+			"Time": 2.40,
+			"Header": "Mutant Sheeps vs Monsters from the Deep",
+			"Text": "Weird sh*t is happening on Earth, hurry…",
+			"God": "Wut?!?"
+		}
+		,
+		{
+			"Time": 3.00,
+			"Header": "Armageddon",
+			"Text": "Oh, no. You are late on your exit party. Earth is destroyed in pretty one-sided battle. Game over!",
+			"God": "T.T"
+		}
+	]
+}
