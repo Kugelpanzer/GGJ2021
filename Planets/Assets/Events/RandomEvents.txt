@@ -176,7 +176,7 @@
 			"Text": "Abandoned, are we?"
 		},
 		{
-			"Text": "My life for Aiur! I mean for you my Lord!"
+			"Text": "My life for Aiur! I mean for you, my Lord!"
 		}
 		
 	]
