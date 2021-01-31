@@ -39,6 +39,7 @@ public class HintPlanet : GenericPlanet
     
     public void SetPlanetImage()
     {
+        GenerateName();
         List<Quadrant> listQ = ReturnListQuadrants();
         Quadrant q = listQ[Random.Range(0, listQ.Count)];
       //  Debug.Log("Q:" + q);
@@ -50,7 +51,7 @@ public class HintPlanet : GenericPlanet
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

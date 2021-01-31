@@ -12,14 +12,7 @@ public class GenericPlanet : Planet
     // Start is called before the first frame update
     void Start()
     {
-        string abc = "";
-        switch (Random.Range(0, 3))
-        {
-            case 0: abc += "a";break;
-            case 1: abc += "b"; break;
-            case 2: abc += "c"; break;
-        }
-        planetName = "Planet " + Random.Range(0, 1000)+abc;
+        GenerateName();
     }
 
     // Update is called once per frame
