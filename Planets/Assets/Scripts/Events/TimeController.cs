@@ -3,9 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TimeController : MonoBehaviour
 {
+
+	public Slider timeSlider;
 	public static TimeController time;
 
 	public TextAsset TimelineEventsFile;
@@ -53,6 +56,8 @@ public class TimeController : MonoBehaviour
 		_timelineEvents = JsonUtility.FromJson<TimelineEventCollection> ( TimelineEventsFile.text );
 		_randomEvents = JsonUtility.FromJson<RandomEventCollection> ( RandomEventsFile.text );
 		OnGameStart();
+
+
 	}
 
 	public bool CheckEnd()
@@ -76,7 +81,13 @@ public class TimeController : MonoBehaviour
 		{
 			ExecuteRandomEvent ( _nextRandomEvent );
 		}
-    }
+        if (CheckEnd())
+        {
+			LevelController.levelController.GoToScene(3);
+        }
+
+		timeSlider.value = (float)GameFraction;
+	}
 
 	public void OnGameStart ()
 	{
