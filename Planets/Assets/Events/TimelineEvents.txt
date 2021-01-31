@@ -8,21 +8,21 @@
 		}
 		,
 		{
-			"Time": 0.20,
+			"Time": 0.30,
 			"Header": "6G plague",
 			"Text": "6G network has caused a plague. Millions of humans die.",
 			"God": "Upsie :s"
 		}
 		,
 		{
-			"Time": 0.40,
+			"Time": 1.00,
 			"Header": "Three Eyed Unicorn Attack",
 			"Text": "Oh God, Why have you cursed us. So fluffy, but so deadly!",
 			"God": "Oh, noes. Who let Emmily out?"
 		}
 		,
 		{
-			"Time": 1.00,
+			"Time": 1.30,
 			"Header": "Zombirona",
 			"Text": "New covid family virus has caused humans to yearn for living flash of other humans",
 			"God": "Not even funny :/"
@@ -30,35 +30,35 @@
 		,
 		
 		{
-			"Time": 1.20,
+			"Time": 2.00,
 			"Header": "Alian Invasion",
 			"Text": "Yo momma aliens invade earth. Fat people spared!",
 			"God": "What? Where did they came from? Oh… OH!"
 		}
 		,
 		{
-			"Time": 1.40,
+			"Time": 2.30,
 			"Header": "Arctic melts",
 			"Text": "Arctic melts due to consumerism. Holland cries for help: “Please send li..gulp, gulp, gulp…”",
 			"God": "Ok. Ok…. We don’t need that? Do we?"
 		}
 		,
 		{
-			"Time": 2.20,
+			"Time": 3.00,
 			"Header": "World War 3",
 			"Text": "Humans wage war over the debate would the next great war be named World War 3 or Atomic War 1. Population of the Earth almost perish.",
 			"God": "You got to be kidding me?!"
 		}
 		,
 		{
-			"Time": 2.40,
+			"Time": 3.30,
 			"Header": "Mutant Sheep vs Monster from the Deep",
 			"Text": "Weird sh*t is happening on Earth, hurry…",
 			"God": "Wut?!?"
 		}
 		,
 		{
-			"Time": 3.00,
+			"Time": 4.00,
 			"Header": "Armageddon",
 			"Text": "Oh, no. You are late on your exit party. Earth is destroyed in pretty one-sided battle. Game over!",
 			"God": "T.T"

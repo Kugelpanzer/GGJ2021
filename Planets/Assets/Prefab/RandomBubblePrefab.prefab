@@ -159,7 +159,7 @@ RectTransform:
   m_GameObject: {fileID: 4216951171072466748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 10733804593694448}
   - {fileID: 3351664790585262343}
@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 2170271102004579812}
+  destroyText: 10
 --- !u!223 &-41620852841031202
 Canvas:
   m_ObjectHideFlags: 0
